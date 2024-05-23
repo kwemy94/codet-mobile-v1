@@ -5,6 +5,7 @@ import Login from '../components/Login';
 import FaireUnDon from '../components/FaireUnDon';
 import Register from '../components/Register';
 import Home from '../components/Home';
+import ButtonTabsNav from './ButtonTabsNav';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,11 +18,15 @@ const StackNav = () => {
             <Stack.Screen name='login' component={Login} options={{
                 headerShown:false
             }} />
-            <Stack.Screen name='don' component={FaireUnDon} />
+            <Stack.Screen name='don' component={FaireUnDon} options={{
+                headerShown:false
+            }} />
             <Stack.Screen name='register' component={Register} options={{
                 headerShown:false
             }} />
-            <Stack.Screen name='home' component={Home} />
+            <Stack.Screen name='buttonTabs' component={ButtonTabsNav} options={{
+                headerShown:false
+            }} />
         </Stack.Navigator>
     )
 }

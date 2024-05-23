@@ -25,7 +25,7 @@ const Register = ({ navigation }) => {
         emailRef.current = null;
         passwordRef.current = null;
         usernameRef.current = null;
-        navigation.navigate('home')
+        navigation.navigate('buttonTabs')
         setLoading(false);
 
         //console.log('resultat: ', response);

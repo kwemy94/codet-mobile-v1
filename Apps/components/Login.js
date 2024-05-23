@@ -22,7 +22,7 @@ const Login = ({ navigation }) => {
     console.log('email: ' + emailRef.current + ' Password: ' + passwordRef.current);
     emailRef.current = null;
     passwordRef.current = null;
-    navigation.navigate('home')
+    navigation.navigate('buttonTabs')
     setLoading(false);
     // console.log('Connexion: ', response);
     // if (!response.success) {

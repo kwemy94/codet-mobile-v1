@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet, FlatList, Image, ScrollView, Button, Alert, ActivityIndicator, TouchableOpacity } from 'react-native'
 import { DATA } from '../data/dataImage'
 import { useState } from 'react'
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 
 const Codet = ({ navigation }) => {
 
@@ -19,7 +20,8 @@ const Codet = ({ navigation }) => {
 
         <TouchableOpacity
           onPress={handlePressDon}
-          style={styles.don}
+          style={styles.login}
+          className='rounded-xl'
         >
 
           <Text style={styles.textLogin}>Faire un don</Text>
@@ -29,6 +31,7 @@ const Codet = ({ navigation }) => {
         <TouchableOpacity
           onPress={handlePressLogin}
           style={styles.login}
+          className='rounded-xl'
         >
 
           <Text style={styles.textLogin}>Login</Text>
@@ -54,18 +57,13 @@ const Codet = ({ navigation }) => {
 }
 
 const styles = StyleSheet.create({
-  title: {
-    fontWeight: 'bold',
-    fontSize: 16,
-    marginTop: 20
-  },
   container: {
     flex: 1,
     backgroundColor: '#fff'
   },
   image: {
-    height: 100,
-    width: 350,
+    height: hp(20),
+    width: wp(97),
     margin: 5
   },
   entete: {
@@ -87,18 +85,13 @@ const styles = StyleSheet.create({
   login: {
     backgroundColor: '#007BFF',
     padding: 8,
-    
-    marginTop: 6,
-  },
-  don: {
-    backgroundColor: '#007BFF',
-    padding: 8,
+    width: '40%',
     marginTop: 6,
   },
   textLogin: {
     color: 'white',
     textAlign: 'center',
-    fontSize: 15
+    fontSize: hp(2.3)
   }
 })
 

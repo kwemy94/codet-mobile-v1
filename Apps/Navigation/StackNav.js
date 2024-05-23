@@ -13,7 +13,8 @@ const StackNav = () => {
     return (
         <Stack.Navigator>
             <Stack.Screen name="Codet" component={Codet} options={{
-                headerTitle:"Codet 1"
+                headerTitle:"Codet 1",
+                headerTitleAlign: 'center'
             }} />
             <Stack.Screen name='login' component={Login} options={{
                 headerShown:false

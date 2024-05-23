@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const Login = () => {
+const ButtonTabsNav = () => {
   return (
     <View>
-      <Text>Login</Text>
+      <Text>ButtonTabsNav</Text>
     </View>
   )
 }
 
-export default Login
+export default ButtonTabsNav
